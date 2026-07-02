@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — João Baião</title>
+<meta name="description" content="AI security projects by João Rafael Avansini Baião.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container">
+    <a href="index.html" class="brand">jrab<span class="dot">.</span>dev</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" aria-label="Toggle color theme">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+      </button>
+      <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Projects</div>
+    <div class="eyebrow">Selected work</div>
+    <h1>Projects</h1>
+    <p>AI-powered tools spanning agent development, adversarial security research, and red-team training simulations.</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <div class="filter-bar reveal">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="ai">AI</button>
+      <button class="filter-btn" data-filter="security">Security</button>
+      <button class="filter-btn" data-filter="automation">Automation</button>
+    </div>
+
+    <div class="project-grid">
+      <article class="project-card reveal" data-tags="ai automation">
+        <div class="project-top">
+          <div class="project-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6v6H9z"/></svg>
+          </div>
+        </div>
+        <h3>AI Agent — LLM Output Capture Tool</h3>
+        <p class="project-desc">An AI-powered agent to capture, store, and organise outputs from LLM interactions, integrating prompt engineering and REST API integration.</p>
+        <div class="tags">
+          <span class="tag">AI Agents</span>
+          <span class="tag">REST API</span>
+          <span class="tag">Prompt Engineering</span>
+        </div>
+        <button class="project-toggle">
+          Details
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="project-detail">
+          <p>Built to systematically capture and structure outputs generated during LLM interactions, this tool integrates directly with REST APIs to persist responses for later analysis, auditing, or downstream automation — reducing the manual effort of tracking prompt/response pairs across sessions.</p>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-tags="ai security">
+        <div class="project-top">
+          <div class="project-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+        </div>
+        <h3>Prompt Injection Simulator</h3>
+        <p class="project-desc">An interactive educational simulator demonstrating six AI security attack types against a Claude-backed LLM, with toggleable defenses and session logging.</p>
+        <div class="tags">
+          <span class="tag">Prompt Injection</span>
+          <span class="tag">TF-IDF</span>
+          <span class="tag">Logistic Regression</span>
+        </div>
+        <button class="project-toggle">
+          Details
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="project-detail">
+          <p>Covers Direct, RAG, and Agent attack categories against a Claude-backed LLM, with toggleable defence mechanisms and session logging. Implemented a detection layer using TF-IDF and Logistic Regression trained on the <strong>deepset/prompt-injections</strong> HuggingFace dataset, with a roadmap toward DistilBERT fine-tuning and SHAP explainability in subsequent phases.</p>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-tags="ai security">
+        <div class="project-top">
+          <div class="project-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+        </div>
+        <h3>Pretexting Script Generator &amp; Red-Team Evaluator</h3>
+        <p class="project-desc">A security training tool using a dual-LLM architecture: one model generates pretexting scripts, a second scores them as a red-team analyst.</p>
+        <div class="tags">
+          <span class="tag">Dual-LLM</span>
+          <span class="tag">Red-Team</span>
+          <span class="tag">Responsible AI</span>
+        </div>
+        <button class="project-toggle">
+          Details
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="project-detail">
+          <p>One model generates realistic pretexting scripts targeting corporate personas (IT helpdesk, HR, executives), while a second model acts as a red-team analyst, scoring each script on plausibility, psychological tactic, risk level, and detection likelihood. Outputs are scoped exclusively to security training scenarios through a responsible AI framework enforced at the system prompt level.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <span class="footer-note">© <span id="year"></span> João Rafael Avansini Baião · Brussels, Belgium</span>
+    <div class="footer-social">
+      <a href="https://linkedin.com/in/joão-rafael-avansini-baião" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+      </a>
+      <a href="mailto:joaorafaelavancinibaiao4@gmail.com" aria-label="Email">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+<div class="toast"></div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
